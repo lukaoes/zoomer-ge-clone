@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoomer.ge</title>
+    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="color-white">
+            <header class="flex color-white">
+                <div class="header-contact mg-l flex gap align">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>ცხელი ხაზი</span> *7007 / +995 (32) 2 60 30 60
+                </div>
+                <div class="header-menu mg-r flex align">
+                    <ul class="flex align">
+                        <li><a href="#">ნივთის დაბრუნება</a></li>
+                        <li><a href="#">სავაჭრო პოლიტიკა</a></li>
+                        <li><a href="#">ონლაინ განვადება</a></li>
+                        <li><a href="#">ფილიალები</a></li>
+                        <li><span><a href="#">ყველა აქცია</a></span></li>
+                    </ul>
+                    <div class="lang flex align gap pl-12">
+
+                        <img src="./img/georgia-flag-icon.webp" alt="georgian">
+                        <span>GEO</span>
+                        <i class="fa-solid fa-angle-down arrow"></i>
+
+                        <div class="lang-select">
+                            <img src="./img/georgia-flag-icon.webp" alt="georgian">
+                            <span>GEO</span>
+                            <img src="./img/US-United-States-Flag-icon.png" alt="georgian">
+                            <span>GEO</span>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="headerV2 color-white flex flex-space align">
+            <div class="logo mg-l">
+                <img src="./img/logo.png" alt="zoomer-logo">
+            </div>
+
+            <div class="search-all">
+                <input type="text" name="search" placeholder="ძიება...">
+                <select name="categories" id="categories">
+                    <option value="cat">კატეგორია</option>
+                    <option value="systems">აკუსტიკური სისტემები</option>
+                    <option value="charger">დამტენები</option>
+                </select>
+
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+
+            </div>
+
+            <div class="icons flex gap mg-r">
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <span>
+                        პროფილი
+                    </span>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>
+                        0 ₾
+                    </span>
+
+                    <div class="cart-dropdown">
+                        <h4>კალათა</h4>
+                        <span>ჯამი: 0₾</span>
+                        <button>კალათაში გადასვლა</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="eurasia color-white">
+
+            <div class="flex">
+                <div class="navigation flex flex-space align mg-l">
+                    <div class="flex align gap">
+                        <i class="fa-solid fa-bars"></i>
+                        <h4>ნავიგაცია</h4>
+                    </div>
+                    <button>ყველა</button>
+                </div>
+
+                <div class="history mg-r">
+                    <a href="#">მთავარი</a>
+                    <a href="#">მობილურები</a>
+                    <span>> Apple </span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="top-filter flex container-new">
+        <div class="top-left filterv2">
+            <h2>ფილტრი</h2>
+        </div>
+        <div class="top-right flex adsv2 flex-space flex-center align">
+
+            <div class="flex gap2 align flex-center">
+                <h2 class="pl-12">მობილურები</h2>
+                <input type="checkbox" id="in-stock" name='in-stock' checked>
+                <label for="in-stock">მარაგშია</label>
+            </div>
+
+            <div class="top-right-select flex align flex-center  gap2">
+                <select name="nums" id="nums">
+                    <option value="40">40</option>
+                    <option value="20">20</option>
+                    <option value="100">100</option>
+                </select>
+                <select name="sort" id="sort">
+                    <option value="ga">გამოშვების თარიღით</option>
+                    <option value="fz">ფასი: ზრდადობით</option>
+                    <option value="fk">ფასი: კლებადობით</option>
+                </select>
+
+                <div class="top-right-icons flex gap2 ">
+                    <i class="fa-solid fa-bars active-icon"></i>
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <main class="flex container-new gap">
+        <div class="filterv2 color-white">
+            <div class="flex flex-space border-bottom mb-12">
+
+                <h4 class="mb-12">მონიშნული</h6>
+                    <span class="clear mb-12">გასუფთავება</span>
+
+            </div>
+            <div class="range-input border-bottom">
+                <h4>ფასი</h4>
+                <input type="range" min="1" max="100" value="50">
+                <input type="text" name="price" id="pricex" value="5999" class="price-input">
+            </div>
+            <div class="categories">
+                <h4 class="mt-12 mb-12">
+                    კატეგორიები
+                </h4>
+                <div class="categories-input ">
+                    <div class="flex gap mb-12">
+                        <input type="checkbox" name="iphone-apple" id="iphone-apple" class="flex">
+                        <label for="iphone-apple">Apple</label>
+                    </div>
+                    <div class="flex gap mb-12">
+                        <input type="checkbox" name="poco" id="poco">
+                        <label for="poco">Poco</label>
+                    </div>
+                    <div class="flex gap mb-12">
+                        <input type="checkbox" name="asus" id="asus">
+                        <label for="asus">Asus</label>
+                    </div>
+                    <div class="flex gap mb-12">
+                        <input type="checkbox" name="vivo" id="vivo">
+                        <label for="vivo">Vivo</label>
+                    </div>
+                    <div class="flex gap mb-12">
+                        <input type="checkbox" name="samsung" id="samsung">
+                        <label for="samsung">Samsung</label>
+                    </div>
+                    <div class="flex gap mb-12">
+                        <input type="checkbox" name="huawei" id="huawei">
+                        <label for="huawei">Huawei</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="adsv2">
+            <div class="flex gap2">
+                <div class="phone-ad color-white">
+                    <img src="./img/nokia.jpeg" alt="nokia">
+                    <h4 class="align">
+                        Nokia 150 (2023) Black
+                    </h4>
+                    <div class="price-cart flex flex-space">
+                        <div>
+                            <span class="product-new-price display-block">
+                                139 ₾
+                            </span>
+                            <span class="price-per-month active-icon">
+                                5 ₾
+                            </span>
+                            <span class="price-per-month">
+                                - დან
+                            </span>
+                        </div>
+                        <div class="phone-ad-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-ad color-white">
+                    <img src="./img/nokia.jpeg" alt="nokia">
+                    <h4 class="align">
+                        Nokia 150 (2023) Black
+                    </h4>
+                    <div class="price-cart flex flex-space">
+                        <div>
+                            <span class="product-new-price display-block">
+                                139 ₾
+                            </span>
+                            <span class="price-per-month active-icon">
+                                5 ₾
+                            </span>
+                            <span class="price-per-month">
+                                - დან
+                            </span>
+                        </div>
+                        <div class="phone-ad-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-ad color-white">
+                    <img src="./img/nokia.jpeg" alt="nokia">
+                    <h4 class="align">
+                        Nokia 150 (2023) Black
+                    </h4>
+                    <div class="price-cart flex flex-space">
+                        <div>
+                            <span class="product-new-price display-block">
+                                139 ₾
+                            </span>
+                            <span class="price-per-month active-icon">
+                                5 ₾
+                            </span>
+                            <span class="price-per-month">
+                                - დან
+                            </span>
+                        </div>
+                        <div class="phone-ad-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-ad color-white">
+                    <img src="./img/nokia.jpeg" alt="nokia">
+                    <h4 class="align">
+                        Nokia 150 (2023) Black
+                    </h4>
+                    <div class="price-cart flex flex-space">
+                        <div>
+                            <span class="product-new-price display-block">
+                                139 ₾
+                            </span>
+                            <span class="price-per-month active-icon">
+                                5 ₾
+                            </span>
+                            <span class="price-per-month">
+                                - დან
+                            </span>
+                        </div>
+                        <div class="phone-ad-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap2 mt-12">
+                <div class="phone-ad color-white">
+                    <img src="./img/nokia.jpeg" alt="nokia">
+                    <h4 class="align">
+                        Nokia 150 (2023) Black
+                    </h4>
+                    <div class="price-cart flex flex-space">
+                        <div>
+                            <span class="product-new-price display-block">
+                                139 ₾
+                            </span>
+                            <span class="price-per-month active-icon">
+                                5 ₾
+                            </span>
+                            <span class="price-per-month">
+                                - დან
+                            </span>
+                        </div>
+                        <div class="phone-ad-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-ad color-white">
+                    <img src="./img/nokia.jpeg" alt="nokia">
+                    <h4 class="align">
+                        Nokia 150 (2023) Black
+                    </h4>
+                    <div class="price-cart flex flex-space">
+                        <div>
+                            <span class="product-new-price display-block">
+                                139 ₾
+                            </span>
+                            <span class="price-per-month active-icon">
+                                5 ₾
+                            </span>
+                            <span class="price-per-month">
+                                - დან
+                            </span>
+                        </div>
+                        <div class="phone-ad-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-ad color-white">
+                    <img src="./img/nokia.jpeg" alt="nokia">
+                    <h4 class="align">
+                        Nokia 150 (2023) Black
+                    </h4>
+                    <div class="price-cart flex flex-space">
+                        <div>
+                            <span class="product-new-price display-block">
+                                139 ₾
+                            </span>
+                            <span class="price-per-month active-icon">
+                                5 ₾
+                            </span>
+                            <span class="price-per-month">
+                                - დან
+                            </span>
+                        </div>
+                        <div class="phone-ad-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-ad color-white">
+                    <img src="./img/nokia.jpeg" alt="nokia">
+                    <h4 class="align">
+                        Nokia 150 (2023) Black
+                    </h4>
+                    <div class="price-cart flex flex-space">
+                        <div>
+                            <span class="product-new-price display-block">
+                                139 ₾
+                            </span>
+                            <span class="price-per-month active-icon">
+                                5 ₾
+                            </span>
+                            <span class="price-per-month">
+                                - დან
+                            </span>
+                        </div>
+                        <div class="phone-ad-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

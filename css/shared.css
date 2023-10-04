@@ -1,0 +1,68 @@
+.color-white {
+    background-color: white;
+}
+
+.main-color {
+    background-color: #ff5000;
+}
+
+.secondary-color {
+    background-color: #0a3251;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.pr-12 {
+    padding-right: 12px;
+}
+
+.pl-12 {
+    padding-left: 12px;
+}
+
+.flex-space {
+    justify-content: space-between;
+}
+
+.flex-center {
+    justify-items: center;
+}
+
+.gap {
+    gap: 20px;
+}
+
+.gap2 {
+    gap: 10px;
+}
+
+.align {
+    align-items: center;
+}
+
+.mg-l {
+    margin-left: auto;
+}
+
+.mg-r {
+    margin-right: auto;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mt-12 {
+    margin-top: 12px;
+}
+
+.display-block {
+    display: block;
+}
